@@ -3,6 +3,7 @@ from selenium import webdriver
 
 link = "http://selenium1py.pythonanywhere.com/"
 
+
 @pytest.fixture
 def browser():
     print("\nstart browser for test..")
@@ -11,7 +12,9 @@ def browser():
     print("\nquit browser..")
     browser.quit()
 
-@pytest.fixture(autouse=True)   #Эта фикстура применится для каждого теста автоматически (использовать на свой страх и риск, могут возникнуть проблемы)
+
+# Эта фикстура применится для каждого теста автоматически (использовать на свой страх и риск, могут возникнуть проблемы)
+@pytest.fixture(autouse=True)
 def prepare_data():
     print()
     print("preparing some critical data for every test")

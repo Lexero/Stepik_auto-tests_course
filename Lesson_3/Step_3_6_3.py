@@ -24,8 +24,8 @@ class TestsStep:
         browser.implicitly_wait(10)
         browser.get(link)
         answer = str(math.log(int(time.time())))
-        input = browser.find_element_by_css_selector(".textarea")
-        input.send_keys(answer)
+        textbox = browser.find_element_by_css_selector(".textarea")
+        textbox.send_keys(answer)
         browser.find_element_by_css_selector(".submit-submission").click()
         answer_good = browser.find_element_by_class_name("smart-hints__hint").text
         try:

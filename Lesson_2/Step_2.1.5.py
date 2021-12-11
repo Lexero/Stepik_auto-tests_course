@@ -5,8 +5,11 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
 link = "http://suninjuly.github.io/math.html"
-def calc(x):
-  return str(math.log(abs(12*math.sin(int(x)))))
+
+
+def calc(f):
+    return str(math.log(abs(12 * math.sin(int(f)))))
+
 
 try:
     options = Options()
@@ -38,5 +41,3 @@ finally:
     time.sleep(10)
     # закрываем браузер после всех манипуляций
     browser.quit()
-
-# не забываем оставить пустую строку в конце файла

@@ -6,8 +6,10 @@ import math
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
-def calc(x):
-  return str(math.log(abs(12*math.sin(int(x)))))
+
+def calc(f):
+    return str(math.log(abs(12 * math.sin(int(f)))))
+
 
 link = "http://suninjuly.github.io/explicit_wait2.html"
 

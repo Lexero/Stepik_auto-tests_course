@@ -4,7 +4,8 @@ from selenium import webdriver
 link = "http://selenium1py.pythonanywhere.com/"
 
 
-@pytest.fixture(scope="class")  # Для фикстур можно задавать область покрытия фикстур. Допустимые значения: “function”, “class”, “module”, “session”.
+# Для фикстур можно задавать область покрытия фикстур. Допустимые значения: “function”, “class”, “module”, “session”.
+@pytest.fixture(scope="class")
 def browser():
     print("\nstart browser for test..")
     browser = webdriver.Chrome()

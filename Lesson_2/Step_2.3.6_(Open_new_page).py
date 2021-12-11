@@ -4,8 +4,10 @@ import math
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
-def calc(x):
-  return str(math.log(abs(12*math.sin(int(x)))))
+
+def calc(f):
+    return str(math.log(abs(12 * math.sin(int(f)))))
+
 
 link = "http://suninjuly.github.io/redirect_accept.html"
 

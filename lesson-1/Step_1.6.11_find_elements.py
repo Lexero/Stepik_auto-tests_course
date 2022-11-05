@@ -18,7 +18,7 @@ try:
     input4 = browser.find_element_by_css_selector(".second_block >div.form-group.first_class > input")
     input4.send_keys("+79000000000")
     input5 = browser.find_element(By.XPATH, "/html/body/div/form/div[2]/div[2]/input")
-    input5.send_keys("Москва, Красная площадь, Д.Lesson_1")
+    input5.send_keys("Москва, Красная площадь, Д.1")
 
     # Отправляем заполненную форму
     button = browser.find_element_by_css_selector("button.btn")
